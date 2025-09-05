@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" />
+		<title>Saikou | Applications</title>
+		<meta name="description" content="Join the Saikou team! Find open positions and apply to become a part of our community." />
+		<link rel="icon" type="image/png" href="https://saikou.dev/assets/images/favicon.png" onerror="this.onerror=null;this.href='https://placehold.co/32x32/121315/FFFFFF?text=S'" />
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" xintegrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<style>
+			body {
+				font-family: 'Montserrat', sans-serif;
+				background-color: #121315;
+				color: white;
+			}
+			.app-card {
+				background-color: #1f222c;
+				border: 1px solid #353a4a;
+				transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+			}
+			.app-card:not(.closed):hover {
+				transform: translateY(-5px);
+				border-color: #7f89ff;
+				box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+			}
+            .app-card.closed {
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
+		</style>
+	</head>
+	<body class="bg-[#121315]">
+		<!-- Header -->
+		<header class="container mx-auto px-4 md:px-0">
+			<nav class="max-w-4xl mx-auto my-4 md:my-8 p-4 bg-[#0c0d0e] rounded-lg flex items-center justify-between">
+				<a class="flex items-center" href="/">
+					<span class="text-white font-bold text-xl">Saikou</span>
+				</a>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<main class="container mx-auto px-4 py-8">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-4xl md:text-6xl font-bold">Join the Saikou Team</h1>
+				<p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">We're always looking for passionate and talented individuals to help us build the future of gaming. Check out our open positions below!</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+				<!-- Moderator Card -->
+				<a href="https://forms.gle/aZs2Y5oc11zZEzST9" target="_blank" rel="noopener noreferrer" class="app-card rounded-lg p-8 block group">
+					<div class="flex items-center mb-4">
+						<i class="fa-solid fa-shield-halved text-3xl text-green-400"></i>
+						<h2 class="text-2xl font-bold ml-4">Moderator</h2>
+					</div>
+					<p class="text-gray-400">Help keep our community safe and welcoming for all players.</p>
+                    <span class="mt-4 inline-block text-green-400 font-bold group-hover:underline">Apply Now &rarr;</span>
+				</a>
+
+				<!-- Community Team Card -->
+				<a href="https://tally.so/r/npkx0q" target="_blank" rel="noopener noreferrer" class="app-card rounded-lg p-8 block group">
+					<div class="flex items-center mb-4">
+						<i class="fa-solid fa-users text-3xl text-blue-400"></i>
+						<h2 class="text-2xl font-bold ml-4">Community Team</h2>
+					</div>
+					<p class="text-gray-400">Engage with our players, run events, and help shape the community.</p>
+                    <span class="mt-4 inline-block text-blue-400 font-bold group-hover:underline">Apply Now &rarr;</span>
+				</a>
+
+                <!-- Content Creator Card -->
+				<a href="position-unavailable.html" class="app-card closed rounded-lg p-8 block group">
+					<div class="flex items-center mb-4">
+						<i class="fa-solid fa-video text-3xl text-gray-500"></i>
+						<h2 class="text-2xl font-bold ml-4">Content Creator</h2>
+					</div>
+					<p class="text-gray-400">Partner with us to create amazing content for our games and community.</p>
+                    <span class="mt-4 inline-block text-gray-500 font-bold">Position Unavailable</span>
+				</a>
+
+                <!-- Development Contractor Card -->
+                <a href="position-unavailable.html" class="app-card closed rounded-lg p-8 block group">
+					<div class="flex items-center mb-4">
+						<i class="fa-solid fa-code text-3xl text-gray-500"></i>
+						<h2 class="text-2xl font-bold ml-4">Development Contractor</h2>
+					</div>
+					<p class="text-gray-400">Work with our development team on exciting new features and projects.</p>
+                    <span class="mt-4 inline-block text-gray-500 font-bold">Position Unavailable</span>
+				</a>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="text-center bg-[#0c0d0e] mt-20 py-12">
+			<div class="container mx-auto px-4">
+				<p class="text-sm text-gray-500">© 2025, Saikou. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
